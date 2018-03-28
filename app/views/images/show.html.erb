@@ -10,5 +10,10 @@
   <%= @image.size %>
 </p>
 
+<p>
+  <strong>File:</strong>
+  <%= image_tag @image.file %>
+</p>
+
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

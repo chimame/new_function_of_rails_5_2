@@ -21,7 +21,12 @@
     <%= form.number_field :size %>
   </div>
 
-  <div class="actions">
+  <div class="field">
+    <%= form.label :file %>
+    <%= form.file_field :file %>
+  </div>
+
+ <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
