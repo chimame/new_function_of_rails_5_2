@@ -1,6 +1,6 @@
 FROM ruby:2.5.0-alpine3.7
 
-RUN apk update && apk add tzdata sqlite sqlite-dev nodejs
+RUN apk update && apk add tzdata imagemagick sqlite sqlite-dev nodejs
 
 RUN mkdir /app
 WORKDIR /app
