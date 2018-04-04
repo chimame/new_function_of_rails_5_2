@@ -12,7 +12,7 @@
 
 <p>
   <strong>File:</strong>
-  <%= image_tag @image.file %>
+  <%= image_tag @image.file if @image.file.attached? %>
 </p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
